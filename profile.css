@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    --prcolor: hsl(215, 51%, 70%);
+    --sccolor: hsl(178, 100%, 50%);
+
+    --mainbgcolor: hsl(217, 54%, 11%);
+    --bgcolor: hsl(216, 50%, 16%);
+    --linecolor: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 1.125em;
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-s: 300;
+    --font-weight-m: 400;
+    --font-weight-h: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainbgcolor);
+    margin: 30px;
+    margin-top: 100px;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+    background-color: var(--bgcolor);
+    margin-top: 100px;
+    padding: 30px;
+    border-radius: 20px;
+    max-width: 450px;
+}
+
+.header a {
+    position: fixed;
+    translate: 25px 120px;
+    color: hsla(215, 51%, 70%, .5);
+    transition: 400ms;
+}
+
+.header a:hover {
+    color: var(--sccolor);
+    scale: 1.1;
+}
+
+#main-container img {
+    min-width: 50%;
+    margin-right: 10px;
+    border: 3px solid var(--linecolor);
+    border-radius: 50%;
+}
+
+#main-container h1 {
+    color: var(--white);
+    font-weight: var(--font-weight-h);
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 20px;
+}
+
+#main-container h1 span {
+    color: var(--sccolor);
+}
+
+.about p {
+    color: var(--prcolor);
+    font-size: 1.1em;
+    font-weight: var(--font-weight-s);
+    line-height: 1.2;
+    text-align: center;
+    padding-block: 25px;
+    padding-inline: 20px;
+    border-top: 1px solid var(--linecolor);
+    border-bottom: 1px solid var(--linecolor);
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+.social-media span {
+    color: black;
+    margin-top: 25px;
+    padding: 10px;
+    transition: 200ms;
+}
+
+.social-media span:hover {
+    scale: 1.5;
+}
+
+#instagram:hover {
+    color: #c72092;
+}
+
+#github:hover {
+    color: white;
+}
+
+#linkedin:hover {
+    color: #0772dd;
+}

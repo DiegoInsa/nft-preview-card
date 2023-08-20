@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+:root {
+
+    --prcolor: hsl(215, 51%, 70%);
+    --sccolor: hsl(178, 100%, 50%);
+
+    --mainbgcolor: hsl(217, 54%, 11%);
+    --bgcolor: hsl(216, 50%, 16%);
+    --linecolor: hsl(215, 32%, 27%);
+    --white: hsl(0, 0%, 100%);
+
+    --font-size: 1.125em;
+    --font-family: 'Outfit', sans-serif;
+    --font-weight-s: 300;
+    --font-weight-m: 400;
+    --font-weight-h: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--mainbgcolor);
+    margin: 30px;
+    margin-top: 100px;
+}
+
+#main-container {
+    font-family: var(--font-family);
+    background-color: var(--bgcolor);
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.main-image img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.about h1 {
+    font-weight: var(--font-weight-h);
+    color: var(--white);
+    letter-spacing: 1px;
+    font-size: 1.5em;
+    padding-block: 20px;
+}
+
+.about p {
+    font-weight: var(--font-weight-s);
+    color: var(--prcolor);
+    font-size: var(--font-size);
+    line-height: 1.5;
+    padding-bottom: 20px;
+}
+
+.sell-info {
+    font-size: var(--font-size);
+    color: var(--prcolor);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid var(--linecolor);
+}
+
+
+
+.sell-info h2 {
+    font-weight: var(--font-weight-h);
+    font-size: 1.1em;
+}
+
+.sell-info a {
+    color: var(--sccolor);
+    text-decoration: none;
+}
+
+.sell-info a:hover {
+    color: hsl(178, 100%, 30%);
+}
+
+.sell-info a:visited {
+    text-decoration: none;
+}
+
+.sell-info h3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: var(--font-weight-h);
+    font-size: .9em;
+
+}
+
+.sell-info img {
+    margin-right: 10px;
+}
+
+.user {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top: 20px;
+    gap: 20px;
+}
+
+.user img {
+    max-width: 40px;
+    border: 1px solid var(--white);
+    border-radius: 50%;
+    transition: 250ms;
+}
+
+.user img:hover {
+    scale: 1.5;
+}
+
+.user p {
+    font-size: var(--font-size);
+    font-weight: var(--font-weight-m);
+    color: var(--prcolor);
+}
+
+.user p a {
+    color: lavender;
+    text-decoration: none;
+}
+
+.user p a:hover {
+    color: rgb(202, 202, 228);
+}
+
+.user p a:active {
+    text-decoration: none;
+}
+
+@media screen and (min-width: 500px) {
+    #main-container {
+        margin-top: 50px;
+        width: 400px;
+    }
+}
